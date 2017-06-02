@@ -17,7 +17,7 @@ cache:
       - $HOME/.local
 
 before_install:
- - composer config -g http-basic.repo.magento.com $MAGE_PUBLICKEY $MAGE_PRIVATEKEY
+  - composer config -g http-basic.repo.magento.com $MAGE_PUBLICKEY $MAGE_PRIVATEKEY
 
 before_script:
  - ./vendor/bin/phpcs --config-set installed_paths vendor/magento
